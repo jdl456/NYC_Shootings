@@ -20,7 +20,7 @@ if __name__ == '__main__':
     for ind in shooting_df.index:
         folium.Marker([shooting_df['Latitude'][ind], shooting_df['Longitude'][ind]], popup = shooting_df['VIC_RACE'][ind] + ' ' + shooting_df['VIC_AGE_GROUP'][ind], icon = folium.Icon(color = 'red', icon = 'info_sign')).add_to(my_map3)
 
-    my_map3.save("NycshootingsQueens2021.html")
+    my_map3.save("NycshootingsManhattan2020.html")
     print(shooting_df.head)
     """plt.plot([1,2,3,4])
     plt.ylabel('some numbers')
